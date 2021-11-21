@@ -1,0 +1,240 @@
+/*Esperanza*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/* Tamaño de html definidio para pruebas 
+ html  
+ {  
+	width:1300px; 
+ }  */
+/*LAS CAJAS DEL MAIN, EL background-color QUE TIENEN ES TEMPORAR PARA DIFERENCIAR LAS DELIMITACIONES DE LAS CAJAS*/
+/*INDICACIÓN DE ISA: DEFINIMOS TAMAÑO DE CAJAS INTERIOR DE FLEX*/
+body,header,nav,footer,#slider,.banner
+{
+	/* body,header,nav y footer : tamaño con respecto a los 1300px de tamaño html*/
+	/* #slider y .banner : tamaño con respecto a los 1260px de tamaño útil del main*/
+	width:100%;	/*Tamaño util*/
+}
+header,nav,footer{
+	border:2px solid white;
+}
+header
+{
+	height:150px;
+	font-style:italic;
+	background-color:#0064A0;
+	font-family:Roboto;
+	font-size:3em;
+
+	position: sticky; 
+	top: 0;
+	left: 0;
+
+	z-index: 999px;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+	
+	/* Utilizamos flex para colocar el título del encabezado correctamente*/
+	display: flex;
+	align-items:center;
+	text-align: center;
+}
+header img{
+	/*200px de espacio útil con respecto a su caja contenedora de 1300px son 15.384%*/
+	width: 15.384%;
+	height: 150px;
+	flex: 0;
+}
+header h1{
+	/*1100px de espacio útil con respecto a su caja contenedora de 1300px son 84.615%%     */
+	width:84.615%;
+	flex: 1;
+	color: white;
+}
+
+nav
+{
+	height:50px;	
+	background-color:#0064A0;
+	display: flex;
+	align-items:center;
+}
+nav a,footer
+{
+	color:white;	
+	font-size:1.5em;
+}
+a:hover
+{
+	color:#FF950C;
+}
+nav a
+{
+	/*325px de espacio útil con respecto a su caja contenedora de 1300px son 25%     */
+	width:25%;
+	flex: 1;
+	text-decoration:none;
+}
+footer,main,nav,#enviar
+{
+	text-align:center;
+}
+
+main
+{
+	/*1260px de espacio útil con respecto a su caja contenedora de 1300px son 96.923%*/
+	width:96.923%;
+	background-color:#64d1b6;
+	margin: 20px;
+	min-height:800px;	
+	overflow:hidden;
+
+}
+
+
+.banner,#slider
+{
+	height:200px;
+}
+div img
+{
+	width: 100%;
+	height: 100%;
+}
+
+#informacionjs{
+	/*1220px (restado padding) de espacio útil con respecto a su caja contenedora de 1260px son 96.8253%*/
+	width:96.8253%;
+	height: 400px;
+	/*20px de padding con respecto a su caja contenedora de 1260px son 1.587%*/
+	padding: 1.587%;
+	text-align: justify;
+	background-color: red;
+	overflow: hidden;
+}
+
+#informacionjs div 
+{
+	/*400px de espacio útil con respecto a su caja contenedora de 1260px son 31.746%*/
+	width: 31.746%;
+	height: 250px;
+	float: left;
+	/*20px de margen con respecto a su caja contenedora de 1260px son 1.587%*/
+	margin-right:1.587%;
+	margin-bottom: 1.587%;
+}
+#informaciontar{
+	/*1220px (restado padding) de espacio útil con respecto a su caja contenedora de 1260px son 96.8253%*/
+	width:96.8253%;
+	height: 200px;
+	/*20px de padding con respecto a su caja contenedora de 1260px son 1.587%*/
+	padding: 1.587%;
+	text-align: justify;
+	background-color:blue;
+}
+#divtarjeta{
+	/*1220px (restado padding) de espacio útil con respecto a su caja contenedora de 1260px son 96.8253%*/
+	width:96.8253%;
+	height: 800px;
+	/*50px 20px de padding con respecto a su caja contenedora de 1260px son 3.968% 1.587%,respectivamente*/
+	padding: 3.968% 1.587%;
+	text-align: left;
+	background-color:greenyellow;
+}
+input[type="text"],select{
+	/*300px de espacio útil con respecto a su caja contenedora de 1260px son 23.809%*/
+	width: 23.809%;
+	height: 20px;
+	/*20px de margen inferior con respecto a su caja contenedora de 1260px son 1.587%*/
+	margin-bottom:1.587%;
+}
+#tarjeta{
+	/*1220px de espacio útil con respecto al espacio útil (1220px) de su caja contenedora de 1260px son 100%*/
+	width: 100%;
+	height: 500px;
+	/*50px de margen superior con respecto a su caja contenedora de 1260px son 3.968%*/
+	margin-top: 3.968%;
+	/*30px de margen inferior con respecto a su caja contenedora de 1260px son 2.380%*/
+	margin-bottom: 2.380%;
+	background-color:#BDF5A9;
+}
+input[type="submit"]{
+	/*100px de espacio útil con respecto a su caja contenedora de 1260px son 7.936%*/
+	width: 7.936%;
+	height: 20px;
+}
+
+footer
+{
+	background-color:#0064A0;
+	height:50px;
+	font-size:medium;
+	font-family:Roboto;
+	position:absolute;
+	
+	
+}
+
+#redes {
+	/*Esta caja tendría 150px de ancho automático */
+	display: inline;
+	float:right;
+
+	display: flex;
+}
+
+#redes img{
+	/*50px de espacio útil con respecto a su caja contenedora de 150px son 33.333%*/
+	width:33.333%;
+	height: 50px;
+}
+
+
+
+ 
