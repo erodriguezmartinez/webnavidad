@@ -1,0 +1,396 @@
+/*Esperanza*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/* Tamaño de html definidio para pruebas 
+ html  
+ {  
+	width:1300px; 
+ }  */
+
+#slider,.banner{
+	/* #slider y .banner : tamaño con respecto a los 1260px de tamaño útil del main*/
+	width:100%;	/*Tamaño util*/
+}
+body,header,footer{
+	/* body,header y footer : 1.296px (le restamos 4px de bordes) tamaño útil con respecto a los 1300px de tamaño html*/
+	width:99.6923%;	/*Tamaño util*/
+}
+header,footer{
+	border:2px solid white;
+}
+header{
+	height:150px;
+	font-style:italic;
+	/*background-color:#0064A0;*/
+	background: rgb(255,255,255);
+	background: linear-gradient(104deg, rgba(255,255,255,1) 4%, rgba(133,199,255,1) 46%, rgba(0,100,160,1) 100%);
+	font-size:3em;
+
+	position: sticky; 
+	top: 0;
+	left: 0;
+
+	z-index: 1;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+	
+	/* Utilizamos flex para colocar el título del encabezado correctamente*/
+	display: flex;
+	align-items:center;
+	text-align: center;
+}
+header img{
+	/*200px de espacio útil con respecto a su caja contenedora de 1300px son 15.384%*/
+	width: 15.384%;
+	height: 150px;
+	flex: 0;
+}
+main h1{
+	font-family:Roboto;
+}
+header h1{
+	/*1100px de espacio útil con respecto a su caja contenedora de 1300px son 84.615%%      */
+	width:84.615%;
+	flex: 1;
+	color: white;
+}
+
+footer,main,#enviar{
+	text-align:center;
+}
+
+main{
+	/*1260px de espacio útil con respecto a su caja contenedora de 1300px son 96.923%
+	width:96.923%;*/
+	width:100%;
+	/*20px de padding con respecto a su caja contenedora de 1260px son 1.587%
+	padding: 1.587%;*/
+	min-height:800px;	
+	overflow:hidden;
+	background-color:#EDEDED;
+}
+
+
+.banner{
+	height:200px;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+}
+
+/*-------------SLIDER--------------*/
+
+#slider {
+    position: relative;
+	height:500px;
+}
+#slider ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+}
+
+#slider ul li  {
+    position: relative;
+    width: 100%;
+	display: none;
+    height: 500px;
+	
+}
+
+#slider ul li img {
+    height: 100%;
+    width: 100%;
+}
+
+/* buttons */
+ #botones  {
+    position: absolute;
+    top: 40%;
+    width:  100%;
+}
+
+#siguiente {
+    right: 0;
+}    
+#anterior {
+    left: 0;
+} 
+#siguiente,#anterior {
+    font-size: 2rem;
+    background: hsl(0, 0%, 25%);
+    color: hsl(0, 0%, 93%);
+    position: absolute;
+    cursor: pointer;
+	/*50px de espacio útil con respecto a su caja contenedora de 1260px son 3.968% */
+    width: 3.968%;
+    text-align: center;
+}  
+#siguiente:hover {
+    padding-right: 5px;
+}
+#anterior:hover {
+    padding-left: 5px;
+} 
+
+/*------------------------------------*/
+
+#informacionjs{
+	/*1220px (restado padding) de espacio útil con respecto a su caja contenedora de 1260px son 96.8253%*/
+	width:96.8253%;
+	min-height: 400px;
+	/*20px de padding con respecto a su caja contenedora de 1260px son 1.587%*/
+	padding: 1.587%;
+	text-align: justify;
+	overflow: hidden;
+}
+
+#videos{
+	/*400px de espacio útil con respecto a su caja contenedora de 1260px son 31.746%*/
+	width: 31.746%;
+	height: 450px;
+	float: left;
+	/*20px de margen con respecto a su caja contenedora de 1260px son 1.587%*/
+	margin-right:1.587%;
+	margin-bottom: 20px;
+}
+ iframe, video{
+	width: 100%;
+	height: 50%;
+}
+
+#informaciontar{
+	/*1220px (restado padding) de espacio útil con respecto a su caja contenedora de 1260px son 96.8253%*/
+	width:96.8253%;
+	min-height: 200px;
+	/*20px de padding con respecto a su caja contenedora de 1260px son 1.587%*/
+	padding: 1.587%;
+	text-align: justify;
+}
+#divtarjeta{
+	/*1220px (restado padding) de espacio útil con respecto a su caja contenedora de 1260px son 96.8253%*/
+	width:96.8253%;
+	height: 900px;
+	/*20px de padding con respecto a su caja contenedora de 1260px son 1.587%*/
+	padding: 1.587%;
+	text-align: left;
+}
+input[type="text"],select{
+	/*300px de espacio útil con respecto a su caja contenedora de 1260px son 23.809%*/
+	width: 23.809%;
+	/*20px de margen inferior con respecto a su caja contenedora de 1260px son 1.587%*/
+	margin-bottom:1.587%;
+	/*10px de padding con respecto a su caja contenedora de 1260px son 0.7936%%*/
+	padding: 0.7936%;
+}
+#tarjeta{
+	/*1220px de espacio útil con respecto al espacio útil (1220px) de su caja contenedora de 1260px son 96.721%*/
+	width: 96.825%;
+	height: 500px;
+
+	/*50px de margen superior con respecto al espacio útil (1220px) de su caja contenedora de 1260px son 4.098%
+	margin-top: 4.098%;
+	30px de margen inferior con respecto al espacio útil (1220px) de su caja contenedora de 1260px son 2.459%
+	margin-bottom: 2.459%;*/
+	margin:4.098% auto 2.459% auto;
+
+	background-color:#BDF5A9;
+	font-size: 1.3em;
+}
+#tarjeta p{
+	position: relative;
+	text-align: justify;
+	top:-350px;
+	padding: 20px;
+}
+p span{
+	font-weight: bold;
+}
+button{
+	/*100px de espacio útil con respecto a su caja contenedora de 1260px son 7.936%*/
+	width: 100px;
+	height: 40px;
+	font-size:x-large;
+}
+
+footer{
+	color:white;	
+	font-size:1.5em;
+	background-color:#0064A0;
+	height:50px;
+	font-family:Roboto;
+	position:absolute;
+	
+}
+footer h3{
+	position:relative;
+	top:15px;
+}
+
+#redes {
+	/*150px de espacio útil con respecto a su caja contenedora de 1300px son 11.538%*/
+	width: 11.538%;
+
+	display: flex;
+	position:relative;
+	top:-25px;
+	float: right;
+}
+
+#redes a {
+	/*50px de espacio útil con respecto a su caja contenedora de 150px son 33.333%*/
+	width:33.333%;
+	height: 50px;
+	
+
+}
+
+/*---TEXTO--*/
+h1{
+	font-weight: bold;
+	font-size: 1.6em;
+}
+p{
+	font-family: 'Open Sans';
+}
+#informacionjs, #informaciontar,input[type="text"],select{
+	font-size: 1.2em;
+}
+
+/*---------------------MEDIA QUERY---------------------*/
+
+@media only screen and (max-width: 650px)
+{
+	header{
+		font-size: 2em;
+	}
+	#informacionjs, #informaciontar,#tarjeta p,input[type="text"],select{
+		font-size: 0.6em;
+	}
+	#divtarjeta{
+		height: 450px;
+	}
+	#tarjeta{
+		font-size: 1em;
+		height: 200px;
+	}
+	input[type="text"],select{
+		width: 100%;
+		height: 25px;
+	}
+	#tarjeta p{
+		top:-170px;
+	}
+	button{
+		font-size: 1em;
+		width: 60px;
+	}
+
+	footer{
+		height: 70px;
+		font-size:0.8em;
+	}
+	#redes{
+		float:none;
+		width: 150px;
+		margin: 0 auto;
+	}
+	footer h3,#redes{
+		position:static;
+	}
+
+	#videos{
+		margin-right: 0px;
+		width: 100%;
+		height: 250px;
+	}
+
+	#slider,#slider ul li {
+		height:200px;
+	}
+	.banner {
+		height:100px;
+	}
+	header,header img{
+		height: 50px;
+	}
+
+	h1{
+		font-weight: bold;
+		font-size: 1em;
+	}
+}	
+
+
+@media only screen and (min-width: 1600px)
+{
+	header{
+		font-size: 4em;
+	}
+	footer{
+		font-size:1.8em;
+	}
+	#informacionjs, #informaciontar{
+		font-size: 1.3em;
+	}
+	#divtarjeta{
+		height: 1000px;
+	}
+	#tarjeta{
+		font-size: 1.5em;
+	}
+	#redes {
+		top:-30px;
+	}
+
+}
+/*educacion imagesize:1000x500*/

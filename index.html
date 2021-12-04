@@ -1,0 +1,161 @@
+<!--Esperanza Rodríguez Martínez-->
+<!--PÁGINA PROYECTO DE TARJETA DE NAVIDAD-->
+<html>
+	<head>
+		<title>Tarjeta de Navidad</title>
+		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="img/logo.png"> 
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+		<link href="css/estilos.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+
+		<!--TÍTULO-->
+		<header>
+				<img src="img/logo.png">
+				<h1>Fundación Loyola</h1>
+		</header>
+		<!--CUERPO DE LA PÁGINA-->
+		<main>
+			<div id="slider">
+				<ul>
+					<li><img src="img/clase.jpg"></li>
+					<li><img src="img/pizarra.jpg"></li>
+					<li><img src="img/ninios.jpg"></li>
+				</ul>
+				<div id="botones">
+					<div id="siguiente">&#10095;</div>
+					<div id="anterior">&#10094;</div>
+				</div>  
+			</div>
+			<div class="banner">
+				<img src="img/banner_educacion_inclusiva.png">
+			</div>
+			<div id="informacionjs">
+				<div id="videos">
+					<video  controls poster="img/educacion_inclusiva.jpg">
+						<source src="recursos/Educacion_inclusiva.mp4" type="video/mp4">
+					</video><br /><br />
+					<iframe src="https://www.youtube.com/embed/sx3fIQU68Zc" 
+						title="Lema ATRÉVETE 21-22"
+						frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+					</iframe>
+				</div>
+				<h1>Educación Inclusiva</h1><br />
+				<p>
+					La <span>educación inclusiva</span> es una aproximación estratégica diseñada para facilitar el aprendizaje exitoso para todos los niño/as y jóvenes.
+				</p><br />
+				<p>
+					Tiene que ver con remover todas las barreras para el aprendizaje,
+					y facilitar la participación de todos los estudiantes vulnerables
+					a la exclusión y la marginalización.
+				</p><br />
+				<p>
+					<span>Todos los estudiantes reciben los soportes que requieren</span> para tener la oportunidad
+					de participar como miembros de una clase o aula regular, con pares de su misma
+					edad y de contribuir a sus colegios del vecindario.
+				</p><br />
+				<p>
+					Inclusión significa posibilitar a todos los estudiantes a participar de lleno en la vida y
+					el trabajo dentro de las comunidades, sin importar sus necesidades.
+					Es el proceso de mayor participación de los estudiantes en el colegio y la reducción
+					de la exclusión de las culturas, el currículo y la comunidad de los colegios locales.
+				</p><br />
+				<h1>¿Qué es la Fundación Educacional Loyola?</h1><br />
+				<p>
+					Somos un grupo de instituciones educativas que busca entregar una formación integral
+					a cada uno de los estudiantes que hacen vida en ellas.
+					De esta manera les damos respuestas acordes a las necesidades que puedan tener
+					en el marco de este Siglo XXI. 
+				</p><br />	
+				<p>
+					Desde la Fundación Educacional Loyola <span>queremos entregar una educación integral</span> que,
+					centrada en la persona, ofrezca aprendizajes de calidad a niños, niñas y jóvenes
+					de contextos vulnerables, siempre bajo la firme premisa que nos caracteriza
+					como organización: una educación jesuita, gratuita y de la más alta calidad.
+				</p><br />		
+				<p>
+					Entendemos que la formación integral implica el crecimiento y la maduración humana y cristiana del alumnado en todas sus dimensiones
+					para que sean personas <span>“competentes, conscientes, compasivas y comprometidas”</span>.
+				</p>	
+			</div>
+			<div id="informaciontar">
+				<h1>Tarjeta navideña</h1><br />
+				<p>
+					Además de promover los valores de nuestras instituciones, queremos animaros a todos a alegrar las fiestas sacando sonrisas, regalando
+					tarjetas navideñas personalizadas.
+				</p><br />
+				<p>
+					Desde las Escuelas Virgen de Guadalupe, animamos y ponemos a disposición de todos nuestros alumnos, padres, madres, profesorado,etc.,
+					la posibilidad de personalizar una tarjeta de felicitación de Navidad a nuestro gusto para felicitar la navidad a nuestros seres queridos.
+				</p><br />
+				<p>
+					Puedes diseñar la tarjeta, eligiendo una plantilla a tu gusto de las que se ofrecen,indicando el nombre a quien va dirigida la felicitación
+					Navideña y elegir el texto que te guste más. 
+				</p><br />
+				<p>
+					Una vez terminada, al hacer click en enviar, se abrirá una página con solo la tarjeta donde podrás copiar el enlace para compartir la tarjeta
+					a la persona deseada de regalar.
+				</p>
+			</div>
+			<div id="divtarjeta">
+				<h1>Crea tu tarjeta navideña</h1><br />
+				<form>
+					<label>Plantilla</label>
+					<select name="plantilla" id="plantilla" >
+						<opt group label="plantillas">
+							<option value="" selected hidden>--Selecciona una plantilla--</option>
+							<option value="plantilla1">Plantilla 1</option>
+							<option value="plantilla2">Plantilla 2</option>
+							<option value="plantilla3">Plantilla 3</option>
+							<option value="plantilla4">Plantilla 4</option>
+							<option value="plantilla5">Plantilla 5</option>
+						</opt>
+					</select><br />
+					<label>Nombre:</label>
+					<input type="text" /><br />
+					<label>Texto</label>
+					<select name="texto" id="texto" >
+						<opt group label="textos">
+							<option value="" selected hidden>--Selecciona texto--</option>
+							<option value="texto1">Texto 1</option>
+							<option value="texto2">Texto 2</option>
+							<option value="texto3">Texto 3</option>
+							<option value="texto4">Texto 4</option>
+							<option value="texto5">Texto 5</option>
+						</opt>
+					</select>
+				</form>
+				<div id="tarjeta">
+					<img src="img/Plantilla4.png">
+					<p>
+						Querido <span>Alfonso</span>,<br />
+						En Navidad  se celebra el Nacimiento de Cristo y el Año Nuevo es el nacimiento de una nueva esperanza.<br /> 
+						Que Dios en su infinita bondad, bendiga y llene nuestros corazones con paz y amor la noche de Navidad.<br /> 
+						 ¡Felices fiestas!
+					</p>
+				</div>
+				<div id="enviar">
+						<button type="submit" id='boton' name="enviar">Enviar</button>
+				</div>
+			</div>
+			<div class="banner">
+				<img src="img/banner_navidad.gif">
+			</div>
+		</main>
+		
+		<footer>
+			<h3>Fundación Loyola</h3>
+			<div id="redes">
+				<a href="https://www.instagram.com/escuelaevg/?hl=es"><img src="img/instagram.png"></a>
+				<a href="https://m.facebook.com/EscuelaVirgendeGuadalupe/?__tn__=%2Cg"><img src="img/facebook.png"></a>
+				<a href="https://twitter.com/escuelaevg?lang=es"><img src="img/twitter.png"></a>
+			</div>
+		</footer>
+
+
+		<script src="js/navidad.js"></script>
+	</body>
+</html>
+
