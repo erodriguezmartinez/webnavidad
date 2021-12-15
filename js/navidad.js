@@ -14,7 +14,7 @@ let slides=null;
  * Función de inicio ejecutada al cargar la página
  */
 function iniciar(){
-
+   
     /*-------Slide-------*/
 
     let slide=0;

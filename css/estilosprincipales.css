@@ -140,7 +140,6 @@ input[type="text"],select{
 	margin-bottom: 2.459%;*/
 	margin:4.098% auto 2.459% auto;
 	/*-------------------------------------------------------*/
-	background-color:#a9cdf5;
 	display:none;
 }
 
@@ -199,7 +198,7 @@ video,iframe,#plantillatar img,#slider ul li,#slider ul li img {
 
 @media only screen and (max-width: 650px)
 {
-	#informacionjs, #informaciontar,#tarjeta p,input[type="text"],select,label{
+	#informacionjs, #informaciontar,input[type="text"],select,label{
 		font-size: 0.6em;
 	}
 

@@ -134,9 +134,9 @@ footer h3{
 #ptexto{
 	position: relative;
 	text-align: justify;
-	top:-350px;
+	top:-390px;
 	padding: 20px;
-    font-size: 1.3em;
+    font-size: 1.6em;
 }
 
 /*Contiene el nombre de la persona a la que va dirigida la tarjeta, generada mediante js (introducido por usuario)*/
@@ -175,6 +175,10 @@ img{
 		font-weight: bold;
 		font-size: 1em;
 	}
+	#ptexto{
+		font-size: 1em;
+	}
+
 }	
 /*-----------------------------------------*/
 
