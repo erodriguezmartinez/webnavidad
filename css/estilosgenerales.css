@@ -1,6 +1,6 @@
 /*Esperanza Rodríguez Martínez*/
 /*Estilos generales para los dos html que contiene el proyecto*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -14,8 +14,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -26,7 +26,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -69,7 +69,7 @@ header{
 	/*Uiizamos z-index para que quede por encima de los demas elemento al hacer scroll*/
 	z-index: 1;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
-	
+
 	/* Utilizamos flex para colocar el título del encabezado correctamente*/
 	display: flex;
 	align-items:center;
@@ -93,7 +93,7 @@ footer,main,#enviar{
 main{
 	/*1300px de tamaño útil*/
 	width:100%;
-	min-height:auto;	
+	min-height:auto;
 	background-color:#EDEDED;
 }
 main h1{
@@ -102,7 +102,7 @@ main h1{
 
 /*--------PIÉ DE PÁGINA------------*/
 footer{
-	color:white;	
+	color:white;
 	font-size:1.5em;
 	background-color:#0064A0;
 	height:auto;
@@ -136,7 +136,7 @@ footer h3{
 	text-align: justify;
 	top:-390px;
 	padding: 20px;
-    font-size: 1.6em;
+  font-size: 1.6em;
 }
 
 /*Contiene el nombre de la persona a la que va dirigida la tarjeta, generada mediante js (introducido por usuario)*/
@@ -162,7 +162,7 @@ img{
 	header{
 		font-size: 1.8em;
 	}
-	
+
 	footer{
 		font-size:0.8em;
 	}
@@ -179,7 +179,14 @@ img{
 		font-size: 1em;
 	}
 
-}	
+}
+@media only screen and (max-width: 400px)
+{
+    #divurl,#ptexto{
+        font-size: 0.8em;
+    }
+
+}
 /*-----------------------------------------*/
 
 /*------------MEDIA QUERY MÁS GRANDE---------------*/
@@ -193,7 +200,7 @@ img{
 		font-size:1.8em;
 		height: 75px;
 	}
-	
+
 }
 
 /*-----------------------------------------*/
