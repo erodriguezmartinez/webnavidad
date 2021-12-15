@@ -36,7 +36,7 @@ main{
     #ptexto{
 		top:-250px;
 	}
-}	
+}
 @media only screen and (max-width: 650px)
 {
     #divurl,#ptexto{
@@ -45,16 +45,16 @@ main{
     #ptexto{
 		top:-200px;
 	}
-}	
+}
 @media only screen and (max-width: 400px)
 {
     #divurl,#ptexto{
-        font-size: 0.5em;
+        font-size: 0.8em;
     }
     #ptexto{
 		top:-140px;
 	}
-}	
+}
 /*-----------------------------------------*/
 
 /*------------MEDIA QUERY MÁS GRANDE---------------*/
