@@ -33,9 +33,7 @@ main{
     #divurl,#ptexto{
         font-size: 1em;
     }
-    #ptexto{
-		top:-170px;
-	}
+
 }	
 /*-----------------------------------------*/
 
@@ -46,9 +44,6 @@ main{
     #divurl,#ptexto{
         font-size: 2em;
     }
-    #ptexto{
-		top: -500px;
-	}
 }
 
 /*-----------------------------------------*/
