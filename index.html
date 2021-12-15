@@ -7,13 +7,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" href="img/logo.png"> 
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-		<link href="css/estilos.css" rel="stylesheet" type="text/css">
+		<link href="css/estilosgenerales.css" rel="stylesheet" type="text/css">
+		<link href="css/estilosprincipales.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 
 		<!--TÍTULO-->
 		<header>
+			<div id="logo">
 				<img src="img/logo.png">
+			</div>
 				<h1>Fundación Loyola</h1>
 		</header>
 		<!--CUERPO DE LA PÁGINA-->
@@ -34,13 +37,17 @@
 			</div>
 			<div id="informacionjs">
 				<div id="videos">
-					<video  controls poster="img/educacion_inclusiva.jpg">
-						<source src="recursos/Educacion_inclusiva.mp4" type="video/mp4">
-					</video><br /><br />
-					<iframe src="https://www.youtube.com/embed/sx3fIQU68Zc" 
-						title="Lema ATRÉVETE 21-22"
-						frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-					</iframe>
+					<div id="video1">
+						<video  controls poster="img/educacion_inclusiva.jpg">
+							<source src="recursos/Educacion_inclusiva.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div id="video2">
+						<iframe src="https://www.youtube.com/embed/sx3fIQU68Zc" 
+							title="Lema ATRÉVETE 21-22"
+							frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+						</iframe>
+					</div>
 				</div>
 				<h1>Educación Inclusiva</h1><br />
 				<p>
@@ -114,7 +121,7 @@
 						</opt>
 					</select><br />
 					<label>Nombre:</label>
-					<input type="text" /><br />
+					<input type="text" id="inombre"/><br />
 					<label>Texto</label>
 					<select name="texto" id="texto" >
 						<opt group label="textos">
@@ -128,17 +135,12 @@
 					</select>
 				</form>
 				<div id="tarjeta">
-					<img src="img/Plantilla4.png">
-					<p>
-						Querido <span>Alfonso</span>,<br />
-						En Navidad  se celebra el Nacimiento de Cristo y el Año Nuevo es el nacimiento de una nueva esperanza.<br /> 
-						Que Dios en su infinita bondad, bendiga y llene nuestros corazones con paz y amor la noche de Navidad.<br /> 
-						 ¡Felices fiestas!
-					</p>
+					<div id="plantillatar">
+						
+					</div>
+
 				</div>
-				<div id="enviar">
-						<button type="submit" id='boton' name="enviar">Enviar</button>
-				</div>
+
 			</div>
 			<div class="banner">
 				<img src="img/banner_navidad.gif">

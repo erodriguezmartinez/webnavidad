@@ -1,0 +1,257 @@
+/*Esperanza Rodríguez Martínez*/
+/*Estilos de la página principal del proyecto*/
+
+/* Tamaño de html definidio para pruebas 
+ html  
+ {  
+	width:1300px; 
+ }  */
+
+
+/*-----------HEADER Y MAIN EN GENERAL-----------*/
+
+/*-----------BANNER----------*/
+.banner{
+	width: 100%;
+	height:auto;
+}
+
+/*-------------SLIDER--------------*/
+
+#slider {
+    position: relative;
+	/* #slider : tamaño con respecto a los 1260px de tamaño útil del main*/
+	width:100%;	/*Tamaño util*/
+	height:500px;
+}
+#slider ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+}
+
+#slider ul li  {
+    position: relative;
+	display: none;
+}
+
+/* Botones del slider */
+ #botones  {
+    position: absolute;
+	/*Desplazamos los botones con absoluto para centrarlos en el slider*/
+    top: 40%;
+    width:  100%;
+}
+/*Colocamos el botón de siguiente en el lado derecho*/
+#siguiente {
+    right: 0;
+}
+/*Colocamos el botón anterior en el rado izquierdo*/
+#anterior {
+    left: 0;
+} 
+/*Caracteristicas comunes de ambos botones*/
+#siguiente,#anterior {
+    font-size: 2rem;
+    background: hsl(0, 0%, 25%);
+    color: hsl(0, 0%, 93%);
+    position: absolute;
+    cursor: pointer;
+	/*50px de espacio útil con respecto a su caja contenedora de 1260px son 3.968% */
+    width: 3.968%;
+    text-align: center;
+}
+/*Añadimos efecto a los botones*/
+#siguiente:hover {
+    padding-right: 5px;
+}
+#anterior:hover {
+    padding-left: 5px;
+} 
+
+/*------------------------------------*/
+
+/*------PRIMERA CAJA, INFORMACIÓN SOBRE JUSTICIA SOCIAL-------*/
+#informacionjs{
+	/*1220px (restado padding) de espacio útil con respecto a su caja contenedora de 1260px son 96.8253%*/
+	width:96.8253%;
+	min-height: 400px;
+	/*20px de padding con respecto a su caja contenedora de 1260px son 1.587%*/
+	padding: 1.587%;
+	text-align: justify;
+	overflow: hidden;
+}
+/*Caja contenedora de ambos vídeos*/
+#videos{
+	/*400px de espacio útil con respecto a su caja contenedora de 1260px son 31.746%*/
+	width: 31.746%;
+	height: 450px;
+	float: left;
+	/*20px de margen con respecto a su caja contenedora de 1260px son 1.587%*/
+	margin-right:1.587%;
+	margin-bottom: 20px;
+}
+/*Mismas caracteristicas para ambos vídeos*/
+#video1,#video2{
+	width: 100%;
+	height:225px;
+
+}
+/*---------------------------------*/
+
+/*------SEGUNDA CAJA, INFORMACIÓN SOBRE LA TARJETA NAVIDEÑA--------*/
+#informaciontar{
+	/*1220px (restado padding) de espacio útil con respecto a su caja contenedora de 1260px son 96.8253%*/
+	width:96.8253%;
+	min-height: 200px;
+	/*20px de padding con respecto a su caja contenedora de 1260px son 1.587%*/
+	padding: 1.587%;
+	text-align: justify;
+}
+/*---------------------*/
+
+/*-----------TERCERA CAJA, CREACIÓN DE TARJETA NAVIDEÑA---------------*/
+#divtarjeta{
+	/*1220px (restado padding) de espacio útil con respecto a su caja contenedora de 1260px son 96.8253%*/
+	width:96.8253%;
+	height: auto;
+	/*20px de padding con respecto a su caja contenedora de 1260px son 1.587%*/
+	padding: 1.587%;
+	text-align: left;
+}
+/*Input y selects para que e usuario defina su tarjeta navideña*/
+input[type="text"],select{
+	/*400px de espacio útil con respecto a su caja contenedora de 1260px son 23.809%*/
+	width: 31.746%;
+	/*20px de margen inferior con respecto a su caja contenedora de 1260px son 1.587%*/
+	margin-bottom:1.587%;
+	/*10px de padding con respecto a su caja contenedora de 1260px son 0.7936%%*/
+	padding: 0.7936%;
+}
+/*Caja contenedora de la tarjeta*/
+#tarjeta{
+	/*1220px de espacio útil con respecto al espacio útil (1220px) de su caja contenedora de 1260px son 96.721%*/
+	width: 96.825%;
+	height: 600px;
+
+	/*50px de margen superior con respecto al espacio útil (1220px) de su caja contenedora de 1260px son 4.098%
+	margin-top: 4.098%;
+	30px de margen inferior con respecto al espacio útil (1220px) de su caja contenedora de 1260px son 2.459%
+	margin-bottom: 2.459%;*/
+	margin:4.098% auto 2.459% auto;
+	/*-------------------------------------------------------*/
+	background-color:#a9cdf5;
+	display:none;
+}
+
+/*----------ESTILOS P DE TARJETA EN GENERAL----------*/
+
+
+#boton{
+	/*120px de espacio útil con respecto a su caja contenedora de 1260px son 9.523%*/
+	width: 9.523%;
+	font-size:x-large;
+    text-decoration: none;
+    padding: 0.833%;
+    font-weight: 600;
+    color: white;
+    background-color: #0064A0;
+    border-radius: 6px;
+    border: 2px solid white;
+  }
+#boton:hover{
+    color: #0064A0;
+    background-color: white;
+	border: 2px solid #0064A0;
+  }
+/*-------------------------------------*/
+
+/*-------FOOTER EN GENERAL-------*/
+
+/*---TEXTO--*/
+/*Estilos generales sobre la letra*/
+h1{
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+/*TIPO DE LETRA DE P EN GENERAL*/
+
+#informacionjs, #informaciontar,input[type="text"],select,label{
+	font-size: 1.2em;
+}
+
+/*---IMAGENES Y VIDEOS---*/
+/*Ajustes de imagenes para controlar resoluciones*/
+img,#plantillatar{
+	width: 100%;
+	height: auto;
+}
+video,iframe,#plantillatar img,#slider ul li,#slider ul li img {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*---------------------MEDIA QUERY---------------------*/
+
+/*--------------MEDIA QUERY MÁS PEQUEÑA---------------*/
+
+@media only screen and (max-width: 650px)
+{
+	#informacionjs, #informaciontar,#tarjeta p,input[type="text"],select,label{
+		font-size: 0.6em;
+	}
+
+	#tarjeta{
+		font-size: 1em;
+		height: 200px;
+	}
+	input[type="text"],select{
+		width: 100%;
+		height: 25px;
+	}
+	#tarjeta p{
+		top:-150px;
+	}
+	#boton{
+		font-size: 1em;
+	}
+
+	#videos{
+		margin-right: 0px;
+		width: 100%;
+		height: 230px;
+	}
+	#video1,#video2{
+		width: 49%;
+		height: auto;
+		display: inline-block;
+	}
+
+	#slider,#slider ul li {
+		height:200px;
+	}
+
+}	
+/*-----------------------------------------*/
+
+/*------------MEDIA QUERY MÁS GRANDE---------------*/
+
+@media only screen and (min-width: 1600px)
+{
+
+	#informacionjs, #informaciontar{
+		font-size: 1.3em;
+	}
+
+	#tarjeta{
+		font-size: 1.5em;
+	}
+	#redes {
+		top:-30px;
+	}
+
+}
+
+/*-----------------------------------------*/

@@ -1,0 +1,195 @@
+/*Esperanza Rodríguez Martínez*/
+/*Estilos generales para los dos html que contiene el proyecto*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*-------------------------------------------------------------------------------------------------------------*/
+
+body,header,footer{
+	/* body,header y footer : 1.296px (le restamos 4px de bordes) tamaño útil con respecto a los 1300px de tamaño html*/
+	width:99.6923%;	/*Tamaño util*/
+}
+/*Borde de cabecera y pié de página*/
+body,header,footer{
+	border:2px solid white;
+}
+/*------CABECERA-------*/
+header{
+	font-style:italic;
+	/*background-color:#0064A0;*/
+	background: rgb(255,255,255);
+	background: linear-gradient(104deg, rgba(255,255,255,1) 4%, rgba(133,199,255,1) 46%, rgba(0,100,160,1) 100%);
+	font-size:3em;
+
+	/*Uiizamos z-index para que quede por encima de los demas elemento al hacer scroll*/
+	z-index: 1;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+	
+	/* Utilizamos flex para colocar el título del encabezado correctamente*/
+	display: flex;
+	align-items:center;
+	text-align: center;
+}
+#logo{
+	width: 15.384%;
+	height: 100%;
+}
+header h1{
+	/*1100px de espacio útil con respecto a su caja contenedora de 1300px son 84.615%*/
+	width:84.615%;
+	color: white;
+}
+/*--------------------------*/
+
+footer,main,#enviar{
+	text-align:center;
+}
+
+main{
+	/*1300px de tamaño útil*/
+	width:100%;
+	min-height:auto;	
+	background-color:#EDEDED;
+}
+main h1{
+	font-family:Roboto;
+}
+
+/*--------PIÉ DE PÁGINA------------*/
+footer{
+	color:white;	
+	font-size:1.5em;
+	background-color:#0064A0;
+	height:auto;
+	font-family:Roboto;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+/*Texto de footer*/
+footer h3{
+	flex: 1;
+}
+/*Caja que contiene los iconos de las redes sociales*/
+#redes {
+	/*150px de espacio útil con respecto a su caja contenedora de 1300px son 11.538%*/
+	width: 11.538%;
+	height: 100%;
+	display: flex;
+	float: right;
+}
+/*Contenedores de cada icono*/
+#redes a{
+	height: 100%;
+	flex: 1;
+}
+/*-------------------------*/
+
+/*Texto de la tarjeta, el contenido se generará mediante js (elegido por usuario)*/
+#ptexto{
+	position: relative;
+	text-align: justify;
+	top:-350px;
+	padding: 20px;
+    font-size: 1.3em;
+}
+
+/*Contiene el nombre de la persona a la que va dirigida la tarjeta, generada mediante js (introducido por usuario)*/
+#ptexto span{
+	font-weight: bold;
+}
+
+p{
+	font-family: 'Open Sans';
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+/*---------------------MEDIA QUERY---------------------*/
+
+/*--------------MEDIA QUERY MÁS PEQUEÑA---------------*/
+
+@media only screen and (max-width: 650px)
+{
+	header{
+		font-size: 1.8em;
+	}
+	
+	footer{
+		font-size:0.8em;
+	}
+	#redes{
+		float:none;
+		height: 25px;
+		margin: 0 auto;
+	}
+	h1{
+		font-weight: bold;
+		font-size: 1em;
+	}
+}	
+/*-----------------------------------------*/
+
+/*------------MEDIA QUERY MÁS GRANDE---------------*/
+
+@media only screen and (min-width: 1600px)
+{
+	header{
+		font-size: 4em;
+	}
+	footer{
+		font-size:1.8em;
+		height: 75px;
+	}
+	
+}
+
+/*-----------------------------------------*/

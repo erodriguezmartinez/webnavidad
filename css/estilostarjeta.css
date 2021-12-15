@@ -1,0 +1,54 @@
+/*Esperanza Rodríguez Martínez*/
+/*Estilos de la página a visualizar la tarjeta ya creada por el usuario*/
+
+main{
+    padding: 2% 0px;
+}
+#divurl{
+    width: 35%;
+    padding: 2%;
+    color: #0064A0;
+    background-color: white;
+	border: 2px solid #0064A0;
+    border-radius: 6px;
+    margin: 0 auto;
+    font-size: 1.8em;
+}
+#divurl a{
+    font-weight: bold;
+}
+#url{
+    display: block;
+    text-decoration:none;
+    color: #0064A0;
+    text-align: center;
+}
+
+/*---------------------MEDIA QUERY---------------------*/
+
+/*--------------MEDIA QUERY MÁS PEQUEÑA---------------*/
+
+@media only screen and (max-width: 650px)
+{
+    #divurl,#ptexto{
+        font-size: 1em;
+    }
+    #ptexto{
+		top:-170px;
+	}
+}	
+/*-----------------------------------------*/
+
+/*------------MEDIA QUERY MÁS GRANDE---------------*/
+
+@media only screen and (min-width: 1600px)
+{
+    #divurl,#ptexto{
+        font-size: 2em;
+    }
+    #ptexto{
+		top: -500px;
+	}
+}
+
+/*-----------------------------------------*/
