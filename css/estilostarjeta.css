@@ -28,12 +28,32 @@ main{
 
 /*--------------MEDIA QUERY MÁS PEQUEÑA---------------*/
 
+@media only screen and (max-width: 900px)
+{
+    #divurl,#ptexto{
+        font-size: 1em;
+    }
+    #ptexto{
+		top:-250px;
+	}
+}	
 @media only screen and (max-width: 650px)
 {
     #divurl,#ptexto{
         font-size: 1em;
     }
-
+    #ptexto{
+		top:-200px;
+	}
+}	
+@media only screen and (max-width: 400px)
+{
+    #divurl,#ptexto{
+        font-size: 0.5em;
+    }
+    #ptexto{
+		top:-140px;
+	}
 }	
 /*-----------------------------------------*/
 
@@ -44,6 +64,9 @@ main{
     #divurl,#ptexto{
         font-size: 2em;
     }
+    #ptexto{
+		top: -500px;
+	}
 }
 
 /*-----------------------------------------*/
